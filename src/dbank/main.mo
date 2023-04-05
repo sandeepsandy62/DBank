@@ -14,7 +14,16 @@ actor DBank {
   //Not Allowed
   //id := 9798415161
 
-  Debug.print(debug_show(currentValue));
-  Debug.print(debug_show(id));
+  //Normal text is allowed to print directly 
+  //Debug.print("Hello");
+
+  //But if you want to print a varibale value we need to use a debug_show()
+  //Debug.print(debug_show(currentValue));
+  //Debug.print(debug_show(id));
+
+  func topUp(){
+    currentValue += 1;
+    Debug.print(debug_show(currentValue));
+  }
 
 }
